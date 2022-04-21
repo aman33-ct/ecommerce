@@ -1,0 +1,23 @@
+<nav class="navbar navbar-light bg-primary ">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/product"><img src="https://www.rvcj.com/wp-content/uploads/2016/06/flipkart-logo-png-transparent-background1.png" style="height: 40px;"></a>
+      
+      <form class="d-flex">
+
+        <input name="search" class="form-control me-2" [(ngModel)] = 'searchTerm' (keyup)="search($event)" type="search" placeholder="Search Products" aria-label="Search" style="width: 400px;">
+        <button class="btn btn-warning" type="submit" style="color: white">Search</button>
+        
+      </form>
+      <a class="navbar-brand" routerLink="/cart">
+        <i class="fa fa-shopping-cart" style="font-size:24px;color: white; float: right;"></i>
+        <span class="badge bg-danger" style="font-size: 10px;
+        float: right;
+        position: absolute;
+        right: 10px;
+        top: 13px;">{{totalItemInCart}}</span>
+      </a>
+      
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>

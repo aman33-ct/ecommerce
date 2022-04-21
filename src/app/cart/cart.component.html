@@ -1,0 +1,43 @@
+<app-header></app-header>
+
+<ng-container *ngIf="isCartEmpty">
+    <div class="card" style="width: 40%; margin: 20px auto;">
+        <img src="https://i.pinimg.com/originals/ee/61/41/ee614196afc593ece1e8aabec1cb2820.png" class="card-img-top">
+        <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Your Cart Is Empty</h5>
+            <a routerLink="/product" class="btn btn-primary">Go to Shopping</a>
+        </div>
+    </div>
+</ng-container>
+<div class="container" style="width: 600px" *ngIf="!isCartEmpty">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">SN</th>
+                <th scope="col">Title</th>
+                <th scope="col">Image</th>
+                <th scope="col">Price</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of result">
+            <tr>
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.title}}</td>
+                <td><img src={{item.image}} class="card-img-top" alt="..."
+                        style="height: 100px; width: 100px; margin: 0 auto;padding: 10px;"></td>
+                <td>${{item.price}}</td>
+                <td><button class="btn btn-danger" (click)="removeItem(item.id)">Remove</button></td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+              <td style="width: 200px;"><button class="btn btn-warning" style="color: #fff">total price</button></td>
+              <td style="width: 200px;"><button class="btn btn-info" style="color: #fff">${{totalprice}}</button></td>
+            </tr>
+          </tfoot>
+    </table>
+</div>
+
+<router-outlet></router-outlet>
