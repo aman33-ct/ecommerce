@@ -1,0 +1,15 @@
+.container {
+    max-width: 40%;
+    padding: 20px;
+    margin: 20px auto;
+    border: solid 2px #0d6efd;
+    color: #0d6efd;
+}
+
+.form-group{
+    margin: 10px 0;
+}
+
+label {
+    margin: 8px 0;
+}

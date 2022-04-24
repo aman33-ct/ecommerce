@@ -1,0 +1,56 @@
+{
+  "signup": [
+    {
+      "name": "sadf",
+      "email": "asd",
+      "confirmpwd": "asdf",
+      "remember": true,
+      "id": 6
+    },
+    {
+      "name": "Aman Kumar",
+      "email": "aman.kumar5561@gmail.com",
+      "confirmpwd": "4321",
+      "remember": true,
+      "id": 7
+    },
+    {
+      "name": "asdf",
+      "email": "asdf",
+      "confirmpwd": "asdf",
+      "remember": true,
+      "id": 8
+    },
+    {
+      "name": "asdf",
+      "email": "asdf",
+      "confirmpwd": "asdf",
+      "remember": true,
+      "id": 13
+    },
+    {
+      "name": "Snehal T",
+      "email": "snehal@gmail.com",
+      "pswd": "Snehal@123",
+      "confirmpwd": "Snehal@123",
+      "remember": true,
+      "id": 14
+    },
+    {
+      "name": "Alok",
+      "email": "alok@gmail.com",
+      "pswd": "321",
+      "confirmpwd": "321",
+      "remember": true,
+      "id": 15
+    },
+    {
+      "name": "asdf",
+      "email": "asdf",
+      "pswd": "asdf",
+      "confirmpwd": "asdf",
+      "remember": true,
+      "id": 16
+    }
+  ]
+}

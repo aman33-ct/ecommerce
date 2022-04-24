@@ -9,13 +9,17 @@ import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     CartComponent,
     HeaderComponent,
-    FilterPipe
+    FilterPipe,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
